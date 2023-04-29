@@ -61,50 +61,53 @@ public class Main {
         System.out.println("Задача 3");
         System.out.println();
 
-        int[] weight = new int[3];
-        weight[0] = 3;
-        int i = weight[0];
-        for (; i >= 2; i--) {
-            System.out.print(i + ", ");
-        }
-        System.out.println(i);
-        System.out.println();
-
+        int[] weight = {1, 2, 3};
         double[] weight1 = {1.57, 7.654, 9.986};
-        System.out.print(weight1[2] + ", ");
-        System.out.print(weight1[1] + ", ");
-        System.out.print(weight1[0]);
+        int[] box = {-1, -2, 0, 1, 2};
+
+        for (int i = weight.length - 1; i >= 0; i--) {
+            System.out.print(weight[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
         System.out.println();
 
-        int[] box = {-2, -1, 0, 1, 2};
-        System.out.print(box[4] + ", ");
-        System.out.print(box[3] + ", ");
-        System.out.print(box[2] + ", ");
-        System.out.print(box[1] + ", ");
-        System.out.print(box[0]);
+        for (int i = weight1.length - 1; i >= 0; i--) {
+            System.out.print(weight1[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
 
+        for (int i = box.length - 1; i >= 0; i--) {
+            System.out.print(box[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
         System.out.println();
     }
+        public static void task4 () {
+            System.out.println("Задача 4");
+            System.out.println();
 
-    public static void task4() {
-        System.out.println("Задача 4");
-        System.out.println();
+            int[] weight ={1, 2, 3};
 
-        int[] weight = new int[3];
-        weight[0] = 1;
-        weight[1] = 2;
-        weight[2] = 3;
-        for (int i = 0; i < weight.length; i++){
-            if (weight[i] % 2 != 0)
-                weight[i] += 1;}
-        for (int i = 0; i < weight.length; i++) {
-            if (i == weight.length - 1) {
-                System.out.println(weight[i]);
-                break;
-
+            for (int i = 0; i < weight.length; i++) {
+                if (weight[i] % 2 != 0) {
+                    weight[i] += 1;
+                }
             }
-            System.out.println(weight[i] + ", ");
+            for (int i = 0; i < weight.length; i++) {
+                if (i == weight.length - 1) {
+                    System.out.print(weight[i]);
+                    break;
+                }
+                System.out.print(weight[i] + ", ");
+            }
         }
     }
-}
+
 
