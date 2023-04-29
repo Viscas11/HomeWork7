@@ -101,6 +101,7 @@ public class Main {
             if (i == weight.length - 1) {
                 System.out.println(weight[i]);
                 break;
+
             }
             System.out.println(weight[i] + ", ");
         }
